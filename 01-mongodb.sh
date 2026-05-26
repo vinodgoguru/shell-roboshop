@@ -7,6 +7,8 @@ sudo chmod -R 755 $LOGS_FOLDER
 LOGS_FILE="$LOGS_FOLDER/$0.log"
 TIME_STAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
+#Colors
+
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
