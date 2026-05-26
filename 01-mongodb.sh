@@ -7,12 +7,12 @@ sudo chmod -R 755 $LOGS_FOLDER
 LOGS_FILE="$LOGS_FOLDER/$0.log"
 TIME_STAMP=$(date "+%Y-%m-%d %H:%M:%S")
 
-USERID=$(id -u)
 R="\e[31m"
 G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
     echo -e "$TIME_STAMP [ERROR] $R Please run this script with root user $N" | tee -a $LOGS_FILE
     exit 1
