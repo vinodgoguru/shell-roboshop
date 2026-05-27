@@ -2,8 +2,8 @@
 
 AMI_ID="ami-0220d79f3f480ecf5"
 ZONE_ID="Z0092557160TJGYZRJVWJ" # Chceck route53 hosted zone
-DOMAIN_NAME="vijaansh.online"
-
+DOMAIN_NAME="vijaansh.online"  # Domain Name
+ 
 for instance in $@
 do 
     echo "Launching instance $instance"
